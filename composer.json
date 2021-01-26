@@ -1,0 +1,18 @@
+{
+    "name": "ccjjmartin/aquaponics",
+    "description": "A small one page site for aquaponics graphs",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Christopher Martin",
+            "email": "ccjjmartin@icloud.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.2",
+        "vlucas/phpdotenv": "^5.3"
+    },
+    "autoload": {
+        "psr-4": {"Aquaponics\\": "src/"}
+    }
+}
