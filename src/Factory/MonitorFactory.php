@@ -13,7 +13,7 @@ class MonitorFactory {
   public function getData() {
     $database = new Aquaponics();
     $connection = $database->connection;
-    $stmt = $connection->prepare("SELECT TimeStamp, TempTank FROM Monitor ORDER BY TimeStamp DESC LIMIT 100");
+    $stmt = $connection->prepare("SELECT TimeStamp, TempTank FROM Monitor ORDER BY TimeStamp DESC LIMIT 6");
     $stmt->execute();
 
     // set the resulting array to associative

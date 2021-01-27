@@ -21,10 +21,9 @@ $factory->prepareData();
       data.addRows(<?php echo $factory->formatData() ?>);
 
     var options = {
-      title: 'Monitor',
-      curveType: 'function',
+      title: 'Fish Tank Monitor (last 6 values)',
       legend: {
-        position: 'bottom'
+        position: 'right'
       }
     };
 

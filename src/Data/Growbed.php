@@ -7,6 +7,14 @@ class Growbed {
   public $timestamp;
   public $baropres;
   public $barotemp;
+  public $barohumi;
+  public $gasoxid;
+  public $gasredu;
+  public $gasnh3;
+  public $lux;
+  public $uva;
+  public $uvb;
+  public $uvi;
 
   public function setData($property, $value) {
     $property = strtolower($property);
@@ -17,6 +25,6 @@ class Growbed {
   }
 
   public function getValues() {
-    return [$this->timestamp, (float) $this->baropres, (float) $this->barotemp];
+    return [$this->timestamp, (float) $this->barotemp, (float) $this->barohumi, (float) $this->gasoxid, (float) $this->gasnh3];
   }
 }

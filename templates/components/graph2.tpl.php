@@ -16,16 +16,18 @@ $factory->prepareData();
   function drawChart() {
     var data = new google.visualization.DataTable();
       data.addColumn('string', 'Time Stamp');
-      data.addColumn('number', 'Baro Press');
       data.addColumn('number', 'Baro Temp');
+      data.addColumn('number', 'Baro Humi');
+      data.addColumn('number', 'Gas Oxid');
+      data.addColumn('number', 'Gas NH3');
 
       data.addRows(<?php echo $factory->formatData() ?>);
 
     var options = {
-      title: 'Growbed',
+      title: 'Grow Bed Monitor (last 6 values)',
       curveType: 'function',
       legend: {
-        position: 'bottom'
+        position: 'right'
       }
     };
 

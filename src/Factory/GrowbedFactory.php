@@ -12,7 +12,7 @@ class GrowbedFactory {
   public function getData() {
     $database = new Aquaponics();
     $connection = $database->connection;
-    $stmt = $connection->prepare("SELECT TimeStamp, BaroPres, BaroTemp FROM GrowBed ORDER BY TimeStamp DESC LIMIT 100");
+    $stmt = $connection->prepare("SELECT TimeStamp, BaroTemp, BaroHumi, GasOxid, GasNH3 FROM GrowBed ORDER BY TimeStamp DESC LIMIT 6");
     $stmt->execute();
 
     // set the resulting array to associative
