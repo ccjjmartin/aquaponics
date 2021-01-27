@@ -1,6 +1,6 @@
 <style type="text/css">
   header {
-    background-image: url('../assets/header-fish.jpeg');
+    background-image: url('assets/header-fish.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
